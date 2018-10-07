@@ -41,7 +41,7 @@ public class BuscaDadosDoIbge {
 		estadoRepository.saveAll(estados);
 	}
 
-	@PostConstruct
+	//@PostConstruct
 	private void buscarEAtualizarCidades() {
 		List<Municipio> municipios = comunicacaoIbge.buscarCidades();
 		List<Cidade> cidades = new ArrayList<>();
